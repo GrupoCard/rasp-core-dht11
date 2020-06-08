@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Termometro.Services.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Termometro.Services.Api.Controllers.GPIOController.Get(System.UInt32)">
+            <summary>
+            Fornece acesso ao Raspberry PI GPIO e inverte o seu valor
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

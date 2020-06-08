@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termometro.Domain", "Termometro.Domain\Termometro.Domain.csproj", "{D878C79C-9C66-4D86-BB4B-0D32525F814E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termometro.Infra.Data", "Termometro.Infra.Data\Termometro.Infra.Data.csproj", "{10FD0A8A-0768-41CA-993D-95F76C85D74F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termometro.UI.Web", "Termometro.UI.Web\Termometro.UI.Web.csproj", "{207E5DEE-C97C-4AF7-A29B-AE09B0413629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termometro.Services.Api", "Termometro.Services.Api\Termometro.Services.Api.csproj", "{A2EF7032-FAC1-4C41-B104-1E9F3B744244}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D878C79C-9C66-4D86-BB4B-0D32525F814E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D878C79C-9C66-4D86-BB4B-0D32525F814E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D878C79C-9C66-4D86-BB4B-0D32525F814E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D878C79C-9C66-4D86-BB4B-0D32525F814E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10FD0A8A-0768-41CA-993D-95F76C85D74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10FD0A8A-0768-41CA-993D-95F76C85D74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10FD0A8A-0768-41CA-993D-95F76C85D74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10FD0A8A-0768-41CA-993D-95F76C85D74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207E5DEE-C97C-4AF7-A29B-AE09B0413629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207E5DEE-C97C-4AF7-A29B-AE09B0413629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207E5DEE-C97C-4AF7-A29B-AE09B0413629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207E5DEE-C97C-4AF7-A29B-AE09B0413629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2EF7032-FAC1-4C41-B104-1E9F3B744244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2EF7032-FAC1-4C41-B104-1E9F3B744244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2EF7032-FAC1-4C41-B104-1E9F3B744244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2EF7032-FAC1-4C41-B104-1E9F3B744244}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE822125-4A45-43F0-AFE1-5682290FACA3}
+	EndGlobalSection
+EndGlobal
