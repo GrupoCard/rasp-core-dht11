@@ -4,6 +4,7 @@ using Termometro.Application.ViewModels;
 using Unosquare.RaspberryIO;
 using Unosquare.RaspberryIO.Abstractions;
 using Unosquare.RaspberryIO.Peripherals;
+using Unosquare.WiringPi;
 
 namespace Termometro.Services.Api.Controllers
 {
@@ -21,6 +22,8 @@ namespace Termometro.Services.Api.Controllers
         [HttpGet]
         public TempHumViewModel GetTemperatura()
         {
+            Pi.Init<BootstrapWiringPi>();
+
             var sensor = DhtSensor.Create(DhtType.Dht11, Pi.Gpio[BcmPin.Gpio04]);
             var model = new TempHumViewModel();
 
