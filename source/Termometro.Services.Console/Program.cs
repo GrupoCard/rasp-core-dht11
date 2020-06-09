@@ -2,6 +2,7 @@
 using Unosquare.RaspberryIO;
 using Unosquare.RaspberryIO.Abstractions;
 using Unosquare.RaspberryIO.Peripherals;
+using Unosquare.WiringPi;
 
 namespace Termometro.Services.Console
 {
@@ -11,6 +12,8 @@ namespace Termometro.Services.Console
 
         static void Main(string[] args)
         {
+            Pi.Init<BootstrapWiringPi>();
+
             TestTempSensor();
         }
 
