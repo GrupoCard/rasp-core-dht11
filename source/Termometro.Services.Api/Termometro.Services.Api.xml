@@ -4,12 +4,30 @@
         <name>Termometro.Services.Api</name>
     </assembly>
     <members>
+        <member name="T:Termometro.Services.Api.Controllers.DHT11Controller">
+            <summary>
+            Sensor DHT11 Controller
+            </summary>
+        </member>
+        <member name="M:Termometro.Services.Api.Controllers.DHT11Controller.GetTemperatura">
+            <summary>
+            Fornecer a temperatura e humidade 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Termometro.Services.Api.Controllers.GPIOController">
+            <summary>
+            CPIO Controller
+            </summary>
+        </member>
         <member name="M:Termometro.Services.Api.Controllers.GPIOController.Get(System.UInt32)">
             <summary>
             Fornece acesso ao Raspberry PI GPIO e inverte o seu valor
             </summary>
             <param name="id"></param>
             <returns></returns>
+            <response code="200">Alterado o </response>
+            <response code="400"></response>
         </member>
     </members>
 </doc>
