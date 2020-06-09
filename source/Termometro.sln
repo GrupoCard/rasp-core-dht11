@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termometro.Services.Api", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termometro.Application", "Termometro.Application\Termometro.Application.csproj", "{6561A34D-00AE-4BA2-8035-8BB2C935E1E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termometro.Services.Console", "Termometro.Services.Console\Termometro.Services.Console.csproj", "{1BD5FBBF-7962-4CD0-BC74-7F428EF920D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6561A34D-00AE-4BA2-8035-8BB2C935E1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6561A34D-00AE-4BA2-8035-8BB2C935E1E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6561A34D-00AE-4BA2-8035-8BB2C935E1E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD5FBBF-7962-4CD0-BC74-7F428EF920D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD5FBBF-7962-4CD0-BC74-7F428EF920D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD5FBBF-7962-4CD0-BC74-7F428EF920D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD5FBBF-7962-4CD0-BC74-7F428EF920D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
