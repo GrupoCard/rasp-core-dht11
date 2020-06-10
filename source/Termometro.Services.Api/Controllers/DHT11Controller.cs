@@ -24,7 +24,7 @@ namespace Termometro.Services.Api.Controllers
         {
             Pi.Init<BootstrapWiringPi>();
 
-            var sensor = DhtSensor.Create(DhtType.Dht11, Pi.Gpio[BcmPin.Gpio04]);
+            using var sensor = DhtSensor.Create(DhtType.Dht11, Pi.Gpio[BcmPin.Gpio04]);
             var model = new TempHumViewModel();
             var valid = false;
 
