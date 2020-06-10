@@ -45,6 +45,7 @@ namespace Termometro.Services.Console
             };
 
             sensor.Start();
+
             while (true)
             {
                 var input = System.Console.ReadKey(true).Key;

@@ -26,24 +26,26 @@ namespace Termometro.Services.Api.Controllers
 
             var sensor = DhtSensor.Create(DhtType.Dht11, Pi.Gpio[BcmPin.Gpio04]);
             var model = new TempHumViewModel();
+            var valid = false;
 
             sensor.OnDataAvailable += (s, e) =>
             {
-                do
-                {
-                    if (e.IsValid)
-                    {
-                        Console.WriteLine($"DHT11 Temperature: \n {e.Temperature:0.00}°C \n {e.TemperatureFahrenheit:0.00}°F  \n Humidity: {e.HumidityPercentage:P0}\n\n");
-                        model.HumidityPercentage = e.HumidityPercentage;
-                        model.Temperature = e.Temperature;
-                        model.TemperatureFahrenheit = e.TemperatureFahrenheit;
-                        model.DateTimeNow = DateTime.Now;
-                        model.DateTimeNowUtc = DateTime.UtcNow;
-                    }
+                if (!e.IsValid)
+                    return;
 
-                } while (!e.IsValid);
+                Console.WriteLine($"DHT11 Temperature: \n {e.Temperature:0.00}°C \n {e.TemperatureFahrenheit:0.00}°F  \n Humidity: {e.HumidityPercentage:P0}\n\n");
+                model.HumidityPercentage = e.HumidityPercentage;
+                model.Temperature = e.Temperature;
+                model.TemperatureFahrenheit = e.TemperatureFahrenheit;
+                model.DateTimeNow = DateTime.Now;
+                model.DateTimeNowUtc = DateTime.UtcNow;
+
+                valid = true;
             };
+
             sensor.Start();
+
+            while (valid) { };
 
             return model;
         }
