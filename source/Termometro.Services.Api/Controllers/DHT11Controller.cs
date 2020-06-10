@@ -45,7 +45,7 @@ namespace Termometro.Services.Api.Controllers
 
             sensor.Start();
 
-            while (valid) { };
+            while (!valid) { };
 
             return model;
         }
