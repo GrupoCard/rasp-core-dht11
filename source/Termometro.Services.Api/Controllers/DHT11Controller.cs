@@ -45,10 +45,7 @@ namespace Termometro.Services.Api.Controllers
 
             sensor.Start();
 
-            while (!valid)
-            {
-                Console.WriteLine(sensor.ToString());
-            };
+            while (!valid) {};
 
             return model;
         }
