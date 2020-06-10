@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Unosquare.RaspberryIO;
 using Unosquare.RaspberryIO.Abstractions;
+using Unosquare.WiringPi;
 
 namespace Termometro.Services.Api.Controllers
 {
@@ -22,6 +23,8 @@ namespace Termometro.Services.Api.Controllers
         [HttpGet("{id}")]
         public bool Get(uint id)
         {
+            Pi.Init<BootstrapWiringPi>();
+
             var pin = Pi.Gpio[(int)id];
             pin.PinMode = GpioPinDriveMode.Output;
             var isOn = pin.Read();

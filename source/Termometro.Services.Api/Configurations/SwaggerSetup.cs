@@ -10,8 +10,15 @@ using System.Threading.Tasks;
 
 namespace Termometro.Services.Api.Configurations
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class SwaggerSetup
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="services"></param>
         public static void AddSwaggerSetup(this IServiceCollection services)
         {
             // Register the Swagger generator, defining 1 or more Swagger documents
@@ -45,6 +52,10 @@ namespace Termometro.Services.Api.Configurations
             });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="app"></param>
         public static void UseSwaggerSetup(this IApplicationBuilder app)
         {
             if (app == null) throw new ArgumentNullException(nameof(app));
