@@ -4,6 +4,23 @@
         <name>Termometro.Services.Api</name>
     </assembly>
     <members>
+        <member name="T:Termometro.Services.Api.Configurations.SwaggerSetup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Termometro.Services.Api.Configurations.SwaggerSetup.AddSwaggerSetup(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Termometro.Services.Api.Configurations.SwaggerSetup.UseSwaggerSetup(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+        </member>
         <member name="T:Termometro.Services.Api.Controllers.DHT11Controller">
             <summary>
             Sensor DHT11 Controller
@@ -28,6 +45,53 @@
             <returns></returns>
             <response code="200">Alterado o </response>
             <response code="400"></response>
+        </member>
+        <member name="T:Termometro.Services.Api.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Termometro.Services.Api.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Termometro.Services.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Termometro.Services.Api.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Termometro.Services.Api.Startup.#ctor(Microsoft.Extensions.Hosting.IHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="P:Termometro.Services.Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Termometro.Services.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Termometro.Services.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
         </member>
     </members>
 </doc>

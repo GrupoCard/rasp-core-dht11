@@ -38,8 +38,8 @@ namespace Termometro.Services.Console
 
                 System.Console.Clear();
                 validReadings++;
-                System.Console.WriteLine($"DHT11 Temperature: \n {e.Temperature:0.00}°C \n {e.TemperatureFahrenheit:0.00}°F  \n Humidity: {e.HumidityPercentage:P0}\n\n");
-                System.Console.WriteLine($"      Number of valid data samples received: {validReadings} of {totalReadings}");
+                System.Console.WriteLine($"DHT11 Temperatura: \n {e.Temperature:0.00}°C \n {e.TemperatureFahrenheit:0.00}°F  \n Humidade: {e.HumidityPercentage:P0}\n\n");
+                System.Console.WriteLine($"      Número de amostras de dados válidas recebidas: {validReadings} de {totalReadings}");
                 System.Console.WriteLine();
                 System.Console.WriteLine(ExitMessage);
             };
