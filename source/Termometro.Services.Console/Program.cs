@@ -8,7 +8,7 @@ namespace Termometro.Services.Console
 {
     class Program
     {
-        private const string ExitMessage = "Press Esc key to continue . . .";
+        private const string ExitMessage = "Pressione a tecla Esc para continuar . . .";
 
         static void Main(string[] args)
         {
